@@ -1,0 +1,2252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+
+
+
+  </style> 
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+
+
+  <div class="ezy__nav1 light ">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+      <div class="container">
+        <a class="navbar-brand text-capitalize fw-bolder" href="#">
+          dream-home.com
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span>
+            <span></span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-4 mt-lg-0">
+            <li class="nav-item"><a class="nav-link active fw-bolder fs-4 text-capitalize" href="#home"> <b>Home </b></a></li>
+            <li class="nav-item"><a class="nav-link fw-bolder fs-4 text-capitalize" href="#porperties"><b> porperties </b></a></li>
+            <li class="nav-item"><a class="nav-link fw-bolder fs-4 text-capitalize" href="#city"> <b>city </b></a></li>
+            <li class="nav-item"><a class="nav-link fw-bolder fs-4 text-capitalize" href="#client"> <b>client </b></a></li>
+            <li class="nav-item"><a class="nav-link fw-bolder fs-4 text-capitalize" href="#content"><b> contact </b></a></li>
+            <li class="nav-item"><a class="nav-link fw-bolder fs-4 text-capitalize" href="#blog"> <b>  blog </b></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <style>
+  .ezy__nav1 {
+    /* Bootstrap variables */
+    --bs-body-color: #1F4529;
+    --bs-body-bg: rgb(13, 110, 253);;
+  
+    /* Easy Frontend variables */
+    --ezy-theme-color: rgb(13, 110, 253);
+    --ezy-theme-color-rgb: 13, 110, 253;
+  
+    background-color: var(--bs-body-bg);
+  }
+  
+  
+  /* Gray Block Style */
+  .gray .ezy__nav1,
+  .ezy__nav1.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: #E8ECD7;
+  }
+  
+  /* Dark Gray Block Style */
+  .dark-gray .ezy__nav1,
+  .ezy__nav1.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(30, 39, 53);
+  }
+  
+  /* Dark Block Style */
+  .dark .ezy__nav1,
+  .ezy__nav1.dark {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(11, 23, 39);
+  
+  }
+  
+  .ezy__nav1 .navbar-brand {
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__nav1 .navbar-toggler {
+    border: none;
+    box-shadow: none !important;
+  }
+  
+  .ezy__nav1 .navbar-toggler>span {
+    display: flex;
+    align-items: center;
+    height: 32px;
+  }
+  
+  .ezy__nav1 .navbar-toggler>span>span {
+    position: relative;
+  }
+  
+  .ezy__nav1 .navbar-toggler>span>span,
+  .ezy__nav1 .navbar-toggler>span>span::before,
+  .ezy__nav1 .navbar-toggler>span>span::after {
+    height: 2px;
+    background-color: var(--bs-body-color);
+    width: 25px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all .35s ease-in-out;
+  }
+  
+  .ezy__nav1 .navbar-toggler>span>span::before,
+  .ezy__nav1 .navbar-toggler>span>span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+  }
+  
+  .ezy__nav1 .navbar-toggler[aria-expanded="false"]>span>span::before {
+    top: 7px;
+  }
+  
+  .ezy__nav1 .navbar-toggler[aria-expanded="false"]>span>span::after {
+    bottom: 7px;
+  }
+  
+  .ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span {
+    background-color: transparent;
+  }
+  
+  .ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span::before {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  
+  .ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span::after {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  
+  .ezy__nav1 .navbar-nav .nav-link {
+    color: var(--bs-body-color);
+    opacity: .6;
+  }
+  
+  .ezy__nav1 .navbar-nav .nav-link:hover,
+  .ezy__nav1 .navbar-nav .nav-link:focus,
+  .ezy__nav1 .navbar-nav .nav-link.active {
+    color: var(--bs-body-color);
+    opacity: 1;
+  }
+  
+  @media (min-width: 992px) {
+    .ezy__nav1 .navbar-nav .nav-link {
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  }
+
+
+  
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+  
+}
+
+.navbar .navbar-nav .nav-item{
+        color: #666;
+      
+        font-size: 16px;
+        font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-item::after{
+        content: "";
+        display: block;
+        position: relative;
+        left: 50%;
+        width: 0px;
+        border-bottom: 5px solid  #1F4529; 
+        transition: all ease-in-out .2s; }
+
+        .navbar .navbar-nav .nav-item:hover::after {
+        width: 80%;
+        left: 15px;
+        margin-top: -5px;
+}
+
+
+  </style>
+
+  
+
+  
+  <style>
+  .ezy__nav1 {
+    /* Bootstrap variables */
+    --bs-body-color: #1F4529;
+    --bs-body-bg: rgb(255, 255, 255);
+  
+    /* Easy Frontend variables */
+    --ezy-theme-color: rgb(13, 110, 253);
+    --ezy-theme-color-rgb: 13, 110, 253;
+  
+    background-color: var(--bs-body-bg);
+  }
+  
+  
+  /* Gray Block Style */
+  .gray .ezy__nav1,
+  .ezy__nav1.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(246, 246, 246);
+  }
+  
+  /* Dark Gray Block Style */
+  .dark-gray .ezy__nav1,
+  .ezy__nav1.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(30, 39, 53);
+  }
+  
+  /* Dark Block Style */
+  .dark .ezy__nav1,
+  .ezy__nav1.dark {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(11, 23, 39);
+  
+  }
+  
+  .ezy__nav1 .navbar-brand {
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__nav1 .navbar-toggler {
+    border: none;
+    box-shadow: none !important;
+  }
+  
+  .ezy__nav1 .navbar-toggler>span {
+    display: flex;
+    align-items: center;
+    height: 32px;
+  }
+  
+  .ezy__nav1 .navbar-toggler>span>span {
+    position: relative;
+  }
+  
+  .ezy__nav1 .navbar-toggler>span>span,
+  .ezy__nav1 .navbar-toggler>span>span::before,
+  .ezy__nav1 .navbar-toggler>span>span::after {
+    height: 2px;
+    background-color: var(--bs-body-color);
+    width: 25px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all .35s ease-in-out;
+  }
+  
+  .ezy__nav1 .navbar-toggler>span>span::before,
+  .ezy__nav1 .navbar-toggler>span>span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+  }
+  
+  .ezy__nav1 .navbar-toggler[aria-expanded="false"]>span>span::before {
+    top: 7px;
+  }
+  
+  .ezy__nav1 .navbar-toggler[aria-expanded="false"]>span>span::after {
+    bottom: 7px;
+  }
+  
+  .ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span {
+    background-color: transparent;
+  }
+  
+  .ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span::before {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  
+  .ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span::after {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  
+  .ezy__nav1 .navbar-nav .nav-link {
+    color: var(--bs-body-color);
+    opacity: .6;
+  }
+  
+  .ezy__nav1 .navbar-nav .nav-link:hover,
+  .ezy__nav1 .navbar-nav .nav-link:focus,
+  .ezy__nav1 .navbar-nav .nav-link.active {
+    color: var(--bs-body-color);
+    opacity: 1;
+  }
+  
+  @media (min-width: 992px) {
+    .ezy__nav1 .navbar-nav .nav-link {
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  }
+  </style>
+
+  
+<style>.c-item{
+  height: 580px;
+
+}
+
+.c-img{
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+
+.header__blog4-btn {
+        padding: 12px 30px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color:transparent;
+        border-color: white;
+      }
+      
+      .header__blog4-btn:hover {
+        color: #ffffff;
+        background-color: #47663B;
+        border: whitesmoke;
+      }
+
+      
+  
+</style>
+
+<div id="home"  data-aos="fade-up"   data-aos-anchor-placement="top-bottom">
+    <header ><!-- Carousel -->
+        <div id="demo" class="carousel slide">
+        
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+          
+          <!-- The slideshow/carousel -->
+        <!-- The slideshow/carousel -->
+  <div class="carousel-inner ">
+    <div class="carousel-item active c-item">
+      <img class="img-fluid" src="https://media.istockphoto.com/id/1720606866/photo/modern-white-bungalow-in-autumn.jpg?s=612x612&w=0&k=20&c=EHbA3fCtAM5zPVF4dctMQRpNg-OBdssmBmRFeKjutys=" alt="img" height="580px" width="100%">
+      <div class="carousel-caption   top-0 mt-4">
+        <p class="mt-5 fs-3 text-uppercase  animate__animated animate__backInDown  ">Los Angeles</p>
+        <h1 class="display-1 fw-bolder text-capitalize  animate__animated animate__backInLeft  ">We had such a great time in LA!</h1>
+        <button  type="button" class="btn header__blog4-btn  w-25 text-capitalize fs-3 fw-bolder   animate__animated animate__backInUp ">book now</button>
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img class="img-fluid" src="https://media.istockphoto.com/id/1539960868/photo/modern-cubic-villa-during-the-day.jpg?s=612x612&w=0&k=20&c=hJCa35j2i8UuDt1sJTV72nvabT7gcGgTJA6IU-lUueo=" alt="img"  height="580px" width="100%">
+      <div class="carousel-caption top-0 mt-4">
+        <p class="mt-5 fs-3 text-uppercase animate__animated animate__backInDown ">Los Angeles</p>
+        <h1 class="display-1 fw-bolder text-capitalize  animate__animated animate__backInLeft">We had such a great time in LA!</h1>
+        <button  type="button" class="btn btn header__blog4-btn  w-25 text-capitalize fs-3 fw-bolder    animate__animated animate__backInUp ">book now</button>
+        
+      </div> 
+    </div>
+    <div class="carousel-item c-item">
+      <img class="img-fluid" src="https://media.istockphoto.com/id/1560744952/photo/modern-house-in-a-classic-style.jpg?s=612x612&w=0&k=20&c=Oiz8_t-MPqIbU_dNBBckMvSKYWd_0DvabudIQ3cjm_4=" alt="img"  height="580px" width="100%">
+      <div class="carousel-caption top-0 mt-4">
+        <p class="mt-5 fs-3 text-uppercase animate__animated animate__backInDown ">Los Angeles</p>
+        <h1 class="display-1 fw-bolder text-capitalize  animate__animated animate__backInLeft">We had such a great time in LA!</h1>
+        <button  type="button" class="btn btn header__blog4-btn  w-25 text-capitalize fs-3 fw-bolder    animate__animated animate__backInUp ">book now</button>
+      </div>  
+    </div>
+  </div>
+  
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        
+      
+        
+        
+        
+          <div class="container-fluid    booking pb-5 wow fadeIn" data-wow-delay="0.1s" style="background-color: #47663B;">
+              <div class="container  mt-0 ">
+                  <div class=" mt  ">
+                      <div class="row g-2 ">
+                          <div class="col-md-10">
+                              <div class="row g-2">
+                                  <div class="col-md-3 mt-5">
+                                      <div class="date" id="date1" data-target-input="nearest">
+                                          <input type="text" class="form-control datetimepicker-input"
+                                              placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3 mt-5">
+                                      <div class="date" id="date2" data-target-input="nearest">
+                                          <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3 mt-5">
+                                      <select class="form-select">
+                                          <option selected>  flat</option>
+                                          <option value="1">Adult 1</option>
+                                          <option value="2">Adult 2</option>
+                                          <option value="3">Adult 3</option>
+                                      </select>
+                                  </div>
+                                  <div class="col-md-3 mt-5">
+                                      <select class="form-select">
+                                          <option selected>Budget</option>
+                                          <option value="1">Child 1</option>
+                                          <option value="2">Child 2</option>
+                                          <option value="3">Child 3</option>
+                                      </select>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-2  mt-5">
+                              <button class="btn btn-primary w-100 bg-light text-dark">Submit</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Booking End -->
+           </header>
+      
+        
+        
+
+
+         
+           <section>
+
+            <style>@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+              h1{ padding: 0 0 30px; }
+              a:hover{ text-decoration:none; }
+              .product-grid{
+                  font-family: "Blinker", sans-serif;
+                  text-align: center;
+                  padding: 10px 10px;
+                  margin: 0 auto;
+                  border: 2px solid #dedade;
+                  overflow: hidden;
+                  transition: all 0.3s ease-in-out;
+              }
+              .product-grid:hover{ border: 2px solid #1F4529;}
+              .product-grid .product-image{
+                  position: relative;
+              }
+              .product-grid .product-image a.image{display: block; }
+              .product-grid .product-image img{
+                  width: 100%;
+                  height: auto;
+              }
+              .product-image .pic-1{ transition: all .5s ease; }
+              .product-grid:hover .product-image .pic-1{ opacity: 0; }
+              .product-image .pic-2{
+                  width: 100%;
+                  height: 100%;
+                  backface-visibility: hidden;
+                  opacity: 0;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  transition: all .5s ease;
+              }
+              .product-grid:hover .product-image .pic-2{ opacity: 1; }
+              .product-grid .product-links{
+                  padding: 0;
+                  margin: 0;
+                  list-style: none;
+                  opacity: 1;
+                  border: 1px solid #aaa;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  transition: all .3s ease 0.3s;
+              }
+              .product-grid:hover .product-links{ opacity: 1; }
+              .product-grid .product-links li{
+                  margin: 0;
+                  display: block;
+              }
+              .product-grid .product-links li a i{ line-height:inherit; }
+              .product-grid .product-links li a{
+                  color: #aaa;
+                  background-color: #fff;
+                  font-size: 16px;
+                  font-weight: 600;
+                  line-height: 37px;
+                  height: 40px;
+                  width: 40px;
+                  margin: 0;
+                  border-bottom: 1px solid #aaa;
+                  display: block;
+                  position: relative;
+                  transition: all 0.3s ease 0.1s;
+              }
+              .product-grid .product-links li a:before,
+              .product-grid .product-links li a:after{
+                  content: attr(data-tip);
+                  color: #fff;
+                  background: #1F4529;
+                  font-size: 12px;
+                  line-height: 20px;
+                  padding: 5px 10px;
+                  border-radius: 5px 5px;
+                  white-space: nowrap;
+                  display: none;
+                  transform: translateY(-50%);
+                  position: absolute;
+                  right: 53px;
+                  top: 50%;
+              }
+              .product-grid .product-links li a:after{
+                  content: "";
+                  height: 15px;
+                  width: 15px;
+                  padding: 0;
+                  border-radius: 0;
+                  transform: translateY(-50%) rotate(45deg);
+                  right: 50px;
+              }
+              .product-grid .product-links li a:hover:before,
+              .product-grid .product-links li a:hover:after{ display: block; }
+              .product-grid .product-links li a:hover{
+                  color: #fff;
+                  background-color: #1F4529;
+              }
+              .product-grid .product-content{ padding: 10px 0 0; }
+              .product-grid .rating{
+                  color: #ffd200;
+                  font-size: 14px;
+                  padding: 0;
+                  margin: 0 0 10px;
+                  list-style: none;
+                  display: inline-block;
+              }
+              .product-grid .rating li:last-child {
+                  color: #111;
+                  display: inline-block;
+              }
+              .product-grid .title{
+                  font-size: 17px;
+                  font-weight: 600;
+                  text-transform: capitalize;
+                  margin: 0 0 5px;
+              }
+              .product-grid .title a{
+                  color: #000;
+                  transition: all 0.3s ease 0s;
+              }
+              .product-grid .title a:hover{ color: #1F4529; }
+              .product-grid .price{
+                  color: #000;
+                  font-size: 20px;
+                  font-weight: 500;
+                  margin: 0 0 5px;
+              }
+              .product-grid .add-cart{
+                  color: #1F4529;
+                  font-size: 14px;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  padding: 11px 12px 10px;
+                  border: 1px solid #1F4529;
+                  display: block;
+                  position: relative;
+                  transition: all .3s ease;
+                  z-index: 1;
+              }
+              .product-grid .add-cart i{ margin: 0 5px 0 0; }
+              .product-grid .add-cart:hover{ color: #fff; }
+              .product-grid .add-cart:before{
+                  content: "";
+                  background: #1F4529;
+                  width: 0;
+                  height: 100%;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  transition: all 0.3s ease-in-out;
+                  z-index: -1;
+              }
+              .product-grid .add-cart:hover:before{ width: 100%; }
+              @media screen and (max-width: 990px){
+                  .product-grid{ margin-bottom: 30px; }
+              }</style>
+
+
+
+
+
+<!--  the porperties teb start -->
+
+           <div id="porperties" data-aos="fade-up"
+           data-aos-anchor-placement="center-bottom">
+            <div class="container mt-5">
+              <div class="row text-center">
+            <h3 class=" text-capitalize fs-1 fw-bolder mt-5 mb-5" style="color:  #1F4529;">letest porperties</h3>
+              </div>
+              <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xl-3">
+                      <div class="product-grid">
+                          <div class="product-image">
+                              <a href="#" class="image">
+                                  <img class="pic-1 img-fluid" src="https://media.istockphoto.com/id/1173146622/photo/modern-townhouse-with-solar-panels-on-the-roof.jpg?s=612x612&w=0&k=20&c=ZcRtM4fI29L-DwxTaVS1EIIYqAAqrtymWWNcaudrAm4=">
+                                  <img class="pic-2 img-fluid" src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=600">
+                              </a>
+                              <ul class="product-links">
+                                  <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a></li>
+                                  <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
+                                  <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                              </ul>
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#">home</a></h3>
+                              <div class="price">$59.99</div>
+                              <ul class="rating">
+                                  <li class="fa fa-star"></li>
+                                  <li class="fa fa-star"></li>
+                                  <li class="fa fa-star"></li>
+                                  <li class="fa fa-star"></li>
+                                  <li class="far fa-star"></li>
+                                  <li>(2)</li>
+                              </ul>
+                             
+                              <a href="#" class="add-cart"><i class="fas fa-cart-plus"></i>Add to cart</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xl-3">
+                      <div class="product-grid">
+                          <div class="product-image">
+                              <a href="#" class="image">
+                                  <img class="pic-1 img-fluid" src="https://media.istockphoto.com/id/1533428163/photo/modern-house-in-classic-style.jpg?s=612x612&w=0&k=20&c=hsqdkH1RCi10m8T9f7CB5LMWBp9c0SFYGG72KpG_thE=">
+                                  <img class="pic-2 img-fluid" src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=600">
+                              </a>
+                              <ul class="product-links">
+                                  <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a></li>
+                                  <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
+                                  <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                              </ul>
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#">home</a></h3>
+                              <div class="price">$49.99</div>
+                              <ul class="rating">
+                                  <li class="fa fa-star"></li>
+                                  <li class="fa fa-star"></li>
+                                  <li class="fa fa-star"></li>
+                                  <li class="far fa-star"></li>
+                                  <li class="far fa-star"></li>
+                                  <li>(3)</li>
+                              </ul>
+                              <a href="#" class="add-cart"><i class="fas fa-cart-plus"></i>Add to cart</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xl-3">
+                      <div class="product-grid">
+                          <div class="product-image">
+                              <a href="#" class="image">
+                                  <img class="pic-1 img-fluid" src="https://media.istockphoto.com/id/2165739615/photo/modern-house-exterior-day-light-with-lawn-grass-3d-rendering.jpg?s=612x612&w=0&k=20&c=cRmjbkYkAOp4jucK03Svf8PzIOnOgnN3T3OhIw3gq78=">
+                                  <img class="pic-2 img-fluid" src="https://images.pexels.com/photos/2155202/pexels-photo-2155202.jpeg?auto=compress&cs=tinysrgb&w=600">
+                              </a>
+                              <ul class="product-links">
+                                  <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a></li>
+                                  <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
+                                  <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                              </ul>
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#">Home</a></h3>
+                              <div class="price">$69.99</div>
+                              <ul class="rating">
+                                  <li class="fa fa-star"></li>
+                                  <li class="fa fa-star"></li>
+                                  <li class="fa fa-star"></li>
+                                  <li class="fa fa-star"></li>
+                                  <li class="fa fa-star"></li>
+                                  <li>(5)</li>
+                              </ul>
+                              <a href="#" class="add-cart"><i class="fas fa-cart-plus"></i>Add to cart</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xl-3">
+                      <div class="product-grid">
+                          <div class="product-image">
+                              <a href="#" class="image">
+                                  <img class="pic-1 img-fluid" src="https://images.pexels.com/photos/1475938/pexels-photo-1475938.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                  <img class="pic-2 img-fluid" src="https://images.pexels.com/photos/1648771/pexels-photo-1648771.jpeg?auto=compress&cs=tinysrgb&w=600">
+                              </a>
+                              <ul class="product-links">
+                                  <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a></li>
+                                  <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
+                                  <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                              </ul>
+                          </div>
+                          <div class="product-content">
+                              <h3 class="title"><a href="#">Home</a></h3>
+                              <div class="price">$29.99</div>
+                              <ul class="rating">
+                                  <li class="fa fa-star"></li>
+                                  <li class="fa fa-star"></li>
+                                  <li class="fa fa-star"></li>
+                                  <li class="fa fa-star"></li>
+                                  <li class="far fa-star"></li>
+                                  <li>(4)</li>
+                              </ul>
+                              <a href="#" class="add-cart"><i class="fas fa-cart-plus"></i>Add to cart</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="container  mt-5">
+            <div class="row text-center">
+                
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xl-3">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1 img-fluid" src="https://images.pexels.com/photos/221024/pexels-photo-221024.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                <img class="pic-2 img-fluid" src="https://images.pexels.com/photos/3016428/pexels-photo-3016428.jpeg?auto=compress&cs=tinysrgb&w=600">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Home</a></h3>
+                            <div class="price">$59.99</div>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="far fa-star"></li>
+                                <li>(2)</li>
+                            </ul>
+                           
+                            <a href="#" class="add-cart"><i class="fas fa-cart-plus"></i>Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xl-3">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic- img-fluid" src="https://images.pexels.com/photos/277667/pexels-photo-277667.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                <img class="pic-2 img-fluid" src="https://images.pexels.com/photos/276508/pexels-photo-276508.jpeg?auto=compress&cs=tinysrgb&w=600">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Home</a></h3>
+                            <div class="price">$49.99</div>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="far fa-star"></li>
+                                <li class="far fa-star"></li>
+                                <li>(3)</li>
+                            </ul>
+                            <a href="#" class="add-cart"><i class="fas fa-cart-plus"></i>Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xl-3">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1 img-fluid" src="https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                <img class="pic-2 img-fluid" src="https://images.pexels.com/photos/1080719/pexels-photo-1080719.jpeg?auto=compress&cs=tinysrgb&w=600">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Home</a></h3>
+                            <div class="price">$69.99</div>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li>(5)</li>
+                            </ul>
+                            <a href="#" class="add-cart"><i class="fas fa-cart-plus"></i>Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xl-3">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1  img-fluid" src="https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                <img class="pic-2 img-fluid" src="https://images.pexels.com/photos/2736139/pexels-photo-2736139.jpeg?auto=compress&cs=tinysrgb&w=600">
+                            </a>
+                            <ul class="product-links">
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Home</a></h3>
+                            <div class="price">$29.99</div>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="far fa-star"></li>
+                                <li>(4)</li>
+                            </ul>
+                            <a href="#" class="add-cart"><i class="fas fa-cart-plus"></i>Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+           </section>
+
+
+</div>
+
+    <!-- cart 7 -->
+  
+  
+  
+    </div>
+  </div>
+  
+  
+  
+  
+  </section>
+  
+  
+</div>
+
+
+  </style>
+
+
+
+
+
+
+  <section><div class="container">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+      h1 { padding: 0 0 30px;}
+      .box{
+          background: linear-gradient(to right,#485563,#7f92a6);
+          font-family: 'Raleway', sans-serif;
+          text-align: center;
+          overflow: hidden;
+          position: relative;
+          transition: all 0.3s ease-in-out;
+      }
+      .box:before,
+      .box:after,
+      .box .box-content{
+          content: "";
+          background: rgba(255, 255, 255, 0.4);
+          transform: scale(0);
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          right: 15px;
+          bottom: 15px;
+          transition: all 0.3s ease-in-out;
+      }
+      .box:after{
+          top: 30px;
+          left: 30px;
+          right: 30px;
+          bottom: 30px;
+      }
+      .box .box-content{
+          top: 45px;
+          left: 45px;
+          right: 45px;
+          bottom: 45px;
+          z-index: 1;
+      }
+      .box:hover:before,
+      .box:hover:after{ transition-delay: 0.1s; }
+      .box:hover:before,
+      .box:hover:after,
+      .box:hover .box-content{ transform: scale(1); }
+      .box img{
+          width: 100%;
+          height: auto;
+          transform: scale(1.1);
+          transition: all 0.3s ease 0s;
+      }
+      .box:hover img{
+          opacity: 0.3;
+          transform: scale(1);
+      }
+      .box .content{
+          color: #485563;
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          opacity: 1;
+          transform: translateX(-50%) translateY(-50%);
+          transition: all 0.3s ease-in-out;
+      }
+      .box:hover .content{
+          opacity: 1;
+      }
+      .box .title{
+          font-size: 22px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin: 0 0 3px;
+      }
+      .box .post{
+          font-size: 16px;
+          font-weight: 600;
+          font-style: italic;
+          text-transform: capitalize;
+          letter-spacing: 1px;
+          margin: 0 0 10px;
+          display: block;
+      }
+      .box .icon{
+          padding: 0;
+          margin: 0;
+          list-style: none;
+      }
+      .box .icon li{
+          display: inline-block;
+          margin: 0 2px;
+      }
+      .box .icon li a{
+          color: #485563;
+          background: #fff;
+          font-size: 15px;
+          line-height: 30px;
+          width: 30px;
+          height: 30px;
+          border-radius: 5px;
+          display: block;
+          transition: all .35s;
+      }
+      .box .icon li a:hover{
+          color: #fff;
+          background: #f92f2f;
+      }
+      .box .icon li  a i{line-height:inherit;}
+      @media only screen and (max-width:990px){
+          .box{ margin: 0 0 30px; }
+      }</style>
+
+
+
+
+  <!-- city teb the start  -->
+
+       <div id="city"data-aos="fade-up"
+       data-aos-anchor-placement="top-center">
+    <div class="row text-center mt-5">
+        <h3 class="fs-1 text-capitalize fw-bolder mt-5 mb-5" style="color: #1F4529;">porperties by city</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="box rounded-3">
+                <img src="https://cdn.pixabay.com/photo/2019/08/29/15/44/lakeside-4439284_640.jpg">
+                <div class="box-content">
+                    <div class="content">
+                        <h3 class="title">Mumbai 
+                        </h3>
+                        <span class="post">Bandra</span>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#"><i class="fa fa-link"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box rounded-3">
+                <img src="https://images.unsplash.com/photo-1553064483-f10fe837615f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHVuZSUyMGNpdHl8ZW58MHx8MHx8fDA%3D">
+                <div class="box-content">
+                    <div class="content">
+                        <h3 class="title">pune</h3>
+                        <span class="post">katrej</span>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#"><i class="fa fa-link"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 ">
+            <div class="box rounded-3">
+                <img src="https://images.pexels.com/photos/739987/pexels-photo-739987.jpeg?auto=compress&cs=tinysrgb&w=600">
+                <div class="box-content">
+                    <div class="content">
+                        <h3 class="title">Bangalore</h3>
+                        <span class="post">pune road</span>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#"><i class="fa fa-link"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></section>
+</div>
+
+
+
+
+
+
+
+<section><div class="container" data-aos="fade-up"
+  data-aos-anchor-placement="top-center">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    h1 { padding: 0 0 30px;}
+    .box{
+        background: linear-gradient(to right,#47663B,#47663B);
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+    }
+    .box:before,
+    .box:after,
+    .box .box-content{
+        content: "";
+        background: #47663B;
+        transform: scale(0);
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        transition: all 0.3s ease-in-out;
+    }
+    .box:after{
+        top: 30px;
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
+    }
+    .box .box-content{
+        top: 45px;
+        left: 45px;
+        right: 45px;
+        bottom: 45px;
+        z-index: 1;
+    }
+    .box:hover:before,
+    .box:hover:after{ transition-delay: 0.1s; }
+    .box:hover:before,
+    .box:hover:after,
+    .box:hover .box-content{ transform: scale(1); }
+    .box img{
+        width: 100%;
+        height: auto;
+        transform: scale(1.1);
+        transition: all 0.3s ease 0s;
+    }
+    .box:hover img{
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    .box .content{
+        color: #f1f4f7;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        transform: translateX(-50%) translateY(-50%);
+        transition: all 0.3s ease-in-out;
+    }
+    .box:hover .content{
+        opacity: 1;
+    }
+    .box .title{
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 0 0 3px;
+    }
+    .box .post{
+        font-size: 16px;
+        font-weight: 600;
+        font-style: italic;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        margin: 0 0 10px;
+        display: block;
+    }
+    .box .icon{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .box .icon li{
+        display: inline-block;
+        margin: 0 2px;
+    }
+    .box .icon li a{
+        color: #485563;
+        background: #fff;
+        font-size: 15px;
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        display: block;
+        transition: all .35s;
+    }
+    .box .icon li a:hover{
+        color: #fff;
+        background: #f92f2f;
+    }
+    .box .icon li  a i{line-height:inherit;}
+    @media only screen and (max-width:990px){
+        .box{ margin: 0 0 30px; }
+    }</style>
+  <div class="row text-center mt-5">
+      
+  </div>
+
+  <div class="row">
+      <div class="col-md-6 col-sm-6">
+          <div class="box rounded-3">
+              <img src="https://media.istockphoto.com/id/471170455/photo/hi-tec-city-building.jpg?s=2048x2048&w=is&k=20&c=WYIR7PJwt4d5B5rnV2HtxHYF-5DJWUeh3dl8-I7ZTm8=">
+              <div class="box-content">
+                  <div class="content">
+                      <h3 class="title"> Hyderabad</h3>
+                      <span class="post">telgana</span>
+                      <ul class="icon">
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-link"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6 col-sm-6">
+          <div class="box rounded-3">
+              <img src="https://media.istockphoto.com/id/1322194536/photo/sabarmati-riverfront-aerial-view-ahmedabad.jpg?s=612x612&w=0&k=20&c=G8qSUp_FeJzB4Tq1vd02NGGSvUC-pI_PSb_z7ELdXAI=">
+              <div class="box-content">
+                  <div class="content">
+                      <h3 class="title"> Ahmedabad</h3>
+                      <span class="post">gujrat</span>
+                      <ul class="icon">
+                          <li><a href="#"><i class="fa fa-search"></i></a></li>
+                          <li><a href="#"><i class="fa fa-link"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      </div>
+  </div>
+</div></section>
+
+
+
+
+ 
+
+
+
+
+
+<div id="client" data-aos="fade-up"
+data-aos-anchor-placement="center-center">
+  <section class="ezy__testimonial1">
+     <h3 class="text-center text-capitalize fs-1 fw-bolder"style="color:darkgreen;">testimonial</h3>
+    <div class="container">
+      <div class="row justify-content-center mb-md-4">
+        <div class="col-lg-6 col-xl-5 text-center">
+          <h2 class="ezy__testimonial1-heading mb-3">client</h2>
+          <p class="ezy__testimonial1-sub-heading mb-0">
+            It’s easier to reach your savings goals when you have the right savings account. Take a look and find the
+            right one for you!
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mt-4">
+          <div class="ezy__testimonial1-item px-4 py-4">
+            <div class="ezy__testimonial1-content mt-3">
+              <p class="mb-4 ezy__testimonial1-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star-half-alt active"></span>
+                <span class="fas fa-star"></span>
+              </p>
+              <p class="opacity-50 mb-4">
+                This is a factor in the economy of a nation, and the administration takes the major choices.This is a factor of a nation.
+              </p>
+              <div class="d-flex align-items-center">
+                <div class="me-2">
+                  <img src="https://cdn.easyfrontend.com/pictures/users/user2.jpg" alt=""
+                    class="img-fluid rounded-circle border" width="47" />
+                </div>
+                <div>
+                  <h4 class="mb-0 fs-5">Akshay Kumar</h4>
+                  <p class="mb-0 small"><i>Founder / CEO</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mt-4">
+          <div class="ezy__testimonial1-item px-4 py-4">
+            <div class="ezy__testimonial1-content mt-3">
+              <p class="mb-4 ezy__testimonial1-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star-half-alt active"></span>
+                <span class="fas fa-star"></span>
+              </p>
+              <p class="opacity-50 mb-4">
+                Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis  qui.
+              </p>
+              <div class="d-flex align-items-center">
+                <div class="me-2">
+                  <img src="https://cdn.easyfrontend.com/pictures/users/user3.jpg" alt=""
+                    class="img-fluid rounded-circle border" width="47" />
+                </div>
+                <div>
+                  <h4 class="mb-0 fs-5">Raima Sen</h4>
+                  <p class="mb-0 small"><i>Business Head</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mt-4">
+          <div class="ezy__testimonial1-item px-4 py-4">
+            <div class="ezy__testimonial1-content mt-3">
+              <p class="mb-4 ezy__testimonial1-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star-half-alt active"></span>
+                <span class="fas fa-star"></span>
+              </p>
+              <p class="opacity-50 mb-4">
+                When it comes to booking a holiday, we know everyone likes something different - so we've designed with you in mind.
+              </p>
+              <div class="d-flex align-items-center">
+                <div class="me-2">
+                  <img src="https://cdn.easyfrontend.com/pictures/users/user27.jpg" alt=""
+                    class="img-fluid rounded-circle border" width="47" />
+                </div>
+                <div>
+                  <h4 class="mb-0 fs-5">Arjun Kapur</h4>
+                  <p class="mb-0 small"><i>UI Design</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <style>.ezy__testimonial1 {
+  /* Bootstrap variables */
+  --bs-body-color: white;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-item-bg: #47663B;
+  --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.37);
+  --ezy-rating-rgb: 255, 215, 0;
+
+  background-color: var(--bs-body-bg);
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+  .ezy__testimonial1 {
+    padding: 100px 0;
+  }
+}
+
+/* Gray Block Style */
+.gray .ezy__testimonial1,
+.ezy__testimonial1.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+
+  /* Easy Frontend variables */
+  --ezy-item-bg: #fff;
+  --ezy-item-shadow: 0px 4px 44px rgba(179, 209, 236, 0.37);
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__testimonial1,
+.ezy__testimonial1.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* Easy Frontend variables */
+  --ezy-item-bg: ;
+  --ezy-item-shadow: none;
+}
+
+/* Dark Block Style */
+.dark .ezy__testimonial1,
+.ezy__testimonial1.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-item-bg: rgb(30, 39, 53);
+  --ezy-item-shadow: none;
+}
+
+.ezy__testimonial1-heading {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
+  .ezy__testimonial1-heading {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+.ezy__testimonial1-sub-heading {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--bs-body-color);
+}
+
+.ezy__testimonial1-item {
+  background-color: var(--ezy-item-bg);
+  border-radius: 15px;
+  box-shadow: var(--ezy-item-shadow);
+}
+
+.ezy__testimonial1-item:hover {
+  --_i: 100%;
+  color: #CC333F;
+  transition: .3s, -webkit-mask-size .3s .3s;
+}
+
+.ezy__testimonial1-item>img {
+  border-radius: 15px;
+  margin-top: -85px;
+}
+
+.ezy__testimonial1-content * {
+  color: var(--bs-body-color);
+}
+
+.ezy__testimonial1-social-links a {
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.ezy__testimonial1-social-links a:hover {
+  transform: translateY(5px);
+  color: var(--bs-body-color);
+  opacity: 1;
+}
+
+.ezy__testimonial1-rating [class*="fa-"]:not(.active),
+.ezy__testimonial1-rating [class*="fa-"]:not(.active) * {
+  color: rgba(var(--ezy-rating-rgb), 0.2);
+}
+
+.ezy__testimonial1-rating [class*="fa-"].active,
+.ezy__testimonial1-rating [class*="fa-"].active * {
+  color: rgba(var(--ezy-rating-rgb), 1);
+}</style>
+<div id="section3">
+
+<style>  
+  .ezy__contact4 {
+    /* Bootstrap variables */
+    --bs-body-color: #28303b;
+    --bs-body-bg: rgb(255, 255, 255);
+  
+    /* Easy Frontend variables */
+    --ezy-theme-color: rgb(13, 110, 253);
+    --ezy-theme-color-rgb: 13, 110, 253;
+    --ezy-form-card-bg: #ffffff;
+    --ezy-form-card-shadow: 0 16px 24px rgba(197, 206, 222, 0.25);
+  
+    background-color: var(--bs-body-bg);
+  
+    padding: 70px 0;
+  }
+  
+  
+  /* Gray Block Style */
+  .gray .ezy__contact4,
+  .ezy__contact4.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(246, 246, 246);
+    --ezy-form-card-bg: #f6f6f6;
+    --ezy-form-card-shadow: 0 16px 24px rgba(64, 95, 150, 0.25);
+  }
+  
+  /* Dark Gray Block Style */
+  .dark-gray .ezy__contact4,
+  .ezy__contact4.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(30, 39, 53);
+  
+  
+    /* Easy Frontend variables */
+    --ezy-form-card-bg: #1f2c3c;
+    --ezy-form-card-shadow: none;
+  }
+  
+  /* Dark Block Style */
+  .dark .ezy__contact4,
+  .ezy__contact4.dark {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(11, 23, 39);
+  
+    /* Easy Frontend variables */
+    --ezy-form-card-bg: #162231;
+    --ezy-form-card-shadow: none;
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__contact4 {
+      padding: 100px 0;
+    }
+  }
+  
+  .ezy__contact4-bg-holder {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 150px;
+  }
+  
+  .ezy__contact4-heading {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    color: var(--bs-body-color);
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__contact4-heading {
+      font-size: 45px;
+      line-height: 45px;
+    }
+  }
+  
+  .ezy__contact4-sub-heading {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__contact4-form-card {
+    background-color: var(--ezy-form-card-bg);
+    border: none;
+    box-shadow: var(--ezy-form-card-shadow);
+    border-radius: 15px;
+  }
+  
+  .ezy__contact4-bg-holder {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+  }
+  
+  .ezy__contact4 .form-control {
+    min-height: 48px;
+    line-height: 40px;
+    border-color: transparent;
+    background: #0c3b7c;
+    border-radius: 10px;
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__contact4 .form-control:focus {
+    border-color: #0a3168;
+    box-shadow: none;
+  }
+  
+  .ezy__contact4-btn {
+    padding: 12px 30px;
+    color: #ffffff;
+    background-color: var(--ezy-theme-color);
+    border-color: var(--ezy-theme-color);
+  }
+  
+  .ezy__contact4-btn:hover {
+    background-color: rgba(var(--ezy-theme-color-rgb), .9);
+    border-color: rgba(var(--ezy-theme-color-rgb), .9);
+    color: #ffffff;
+  }
+  </style>
+  
+  
+  
+   
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+<div id="content" data-aos="fade-up"
+data-aos-anchor-placement="bottom-bottom">
+  <section class="ezy__contact12 light position-relative">
+    <div class="ezy__contact12-bg-holder d-none d-md-block"
+      style="background-image: url(https://media.istockphoto.com/id/1210112302/photo/3d-rendering-of-modern-house-with-wood-plank-facade.jpg?s=612x612&w=0&k=20&c=pbiHJPR6zULaaVI_Fq9NVTMTTcO52KXFnv7qtDWSmxM=);"></div>
+    <div class="container position-relative">
+      <div class="row justify-content-between">
+        <div class="col-lg-7 col-xxl-5 mb-5 mb-lg-0">
+          <h2 class="ezy__contact12-title mb-4 mt-0">How can we help you?</h2>
+          <p class="ezy__contact12-sub-heading mb-0">It’s easier to reach your savings goals when you have the
+            right savings account. Take a look and find the right one for you!</p>
+  
+          <div class="mt-5 pt-md-4">
+            <div class="card ezy__contact12-link mt-4">
+              <div class="card-body d-flex align-items-center">
+                <i class="fas fa-envelope-open-text ezy__contact12-icon fs-3 px-2"></i>
+                <a class="ezy__contact12-link-content ms-4"
+                  href="mailto:email@easyfrontend.com">email@Example.com</a>
+              </div>
+            </div>
+            <div class="card ezy__contact12-link mt-4">
+              <div class="card-body d-flex align-items-center">
+                <i class="fas fa-phone-alt ezy__contact12-icon fs-3 px-2"></i>
+                <a class="ezy__contact12-link-content ms-4" href="callto:123**56">+880 1742-0****0</a>
+              </div>
+            </div>
+            <div class="card ezy__contact12-link mt-4">
+              <div class="card-body d-flex align-items-center">
+                <i class="fas fa-hdd ezy__contact12-icon fs-3 px-2"></i>
+                <a class="ezy__contact12-link-content ms-4" href="#">exam.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card ezy__contact12-form-card">
+            <div class="card-body p-md-5">
+              <h2 class="ezy__contact12-heading mb-3">Contact Us</h2>
+              <p class="ezy__contact12-sub-heading mb-5">We list your menu online, help you process
+                orders.</p>
+  
+              <form>
+                <div class="form-group mb-3 mt-2">
+                  <input type="text" class="form-control" placeholder="Enter Name" />
+                </div>
+                <div class="form-group mb-3 mt-2">
+                  <input type="email" class="form-control" placeholder="Enter Email" />
+                </div>
+                <div class="form-group mb-3">
+                  <textarea name="message" class="form-control" placeholder="Enter Message"
+                    rows="3"></textarea>
+                </div>
+                <div class="text-end">
+                  <button type="submit" class="btn btn-primary ezy__contact12-btn">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+  .ezy__contact12 {
+    /* Bootstrap variables */
+    --bs-body-color: #47663B;
+    --bs-body-bg: rgb(244, 247, 253);
+  
+    /* Easy Frontend variables */
+    --ezy-theme-color: #47663B;
+    --ezy-theme-color-rgb: 13, 110, 253;
+    --ezy-form-card-bg: #ffffff;
+    --ezy-form-card-shadow: none;
+    --ezy-link-bg: #ffffff;
+    --ezy-link-hover-shadow: 0 16px 24px 0 rgba(197, 206, 222, .25);
+  
+    background-color: var(--bs-body-bg);
+    padding: 70px 0;
+  }
+  
+  /* Gray Block Style */
+  .gray .ezy__contact12,
+  .ezy__contact12.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(246, 246, 246);
+  
+    /* easy frontend variables */
+    --ezy-form-card-bg: #f6f6f6;
+    --ezy-form-card-shadow: none;
+    --ezy-link-bg: #f6f6f6;
+    --ezy-link-hover-shadow: 0 16px 24px 0 rgba(197, 206, 222, .25);
+  }
+  
+  /* Dark Gray Block Style */
+  .dark-gray .ezy__contact12,
+  .ezy__contact12.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(30, 39, 53);
+  
+    /* Easy Frontend variables */
+    --ezy-form-card-bg: #212d3c;
+    --ezy-form-card-shadow: none;
+    --ezy-link-bg: #202e3e;
+    --ezy-link-hover-shadow: 0 16px 24px 0 rgba(40, 40, 40, .25);
+  }
+  
+  /* Dark Block Style */
+  .dark .ezy__contact12,
+  .ezy__contact12.dark {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(11, 23, 39);
+  
+    /* Easy Frontend variables */
+    --ezy-form-card-bg: #162231;
+    --ezy-form-card-shadow: none;
+    --ezy-link-bg: #162231;
+    --ezy-link-hover-shadow: 0 16px 24px 0 rgba(44, 44, 44, .25);
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__contact12 {
+      padding: 100px 0;
+    }
+  }
+  
+  .ezy__contact12-title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    color: var(--bs-body-color);
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__contact12-title {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+  
+  .ezy__contact12-heading {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    color: var(--bs-body-color);
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__contact12-heading {
+      font-size: 45px;
+      line-height: 45px;
+    }
+  }
+  
+  .ezy__contact12-sub-heading {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__contact12-bg-holder {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 267px;
+  }
+  
+  .ezy__contact12-form-card {
+    background-color: var(--ezy-form-card-bg);
+    border: none;
+    box-shadow: var(--ezy-form-card-shadow);
+    border-radius: 15px;
+  }
+  
+  .ezy__contact12 .form-control {
+    min-height: 48px;
+    line-height: 40px;
+    border-color: transparent;
+    background:  #7c9473;
+    border-radius: 10px;
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__contact12 .form-control:focus {
+    border-color: #47663B;
+    box-shadow: none;
+  }
+  
+  .ezy__contact12-btn {
+    padding: 12px 30px;
+    color: #ffffff;
+    background-color: var(--ezy-theme-color);
+    border-color: var(--ezy-theme-color);
+  }
+  
+  .ezy__contact12-btn:hover {
+    background-color: rgba(var(--ezy-theme-color-rgb), .9);
+    border-color: rgba(var(--ezy-theme-color-rgb), .9);
+    color: #ffffff;
+  }
+  
+  .ezy__contact12-link {
+    background-color: var(--ezy-link-bg);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    transition: box-shadow .15s ease-in-out;
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__contact12-link {
+      max-width: 350px;
+    }
+  }
+  
+  .ezy__contact12-icon,
+  .ezy__contact12-link .ezy__contact12-link-content {
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__contact12-link.active,
+  .ezy__contact12-link:hover {
+    box-shadow: var(--ezy-link-hover-shadow);
+  }
+  
+  .ezy__contact12-link-content {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  </style>
+</div>
+</style>
+
+<div id="blog" >
+  <section class="ezy__blog6 light" >
+    <div class="container   mb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="ezy__blog6-heading mb-3 mt-0" style="color:  #1F4529;">Blog</h2>
+        
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12 col-md-6 col-lg-4 mb-3 h-100">
+          <article class="ezy__blog6-post">
+            <div class="position-relative">
+              <img
+                src="https://media.istockphoto.com/id/1165699686/photo/3d-rendering-of-modern-house-on-the-hill-with-pool-in-autumn-evening.jpg?s=612x612&w=0&k=20&c=KxrJYLNIuZy-dQZdcmfcG-FQpOs4H8r-HAMN1CQ8OO8="
+                alt=""
+                class="img-fluid w-100 ezy-blog6-banner"
+              />
+              <div class="px-4 py-3 ezy__blog6-calendar">06<br />Nov<br />2016</div>
+            </div>
+            <div class="p-3">
+              <p class="ezy__blog6-author">By <a href="" class="text-decoration-none">David Miller</a></p>
+              <h4 class="mt-3 ezy__blog6-title fs-4" style="color:darkgreen;">Nice Workplace For Brainstorming Meetings</h4>
+              <p class="ezy__blog6-description mt-3 mb-4" style="color:darkgreen;">
+                Unique side projects are the best place to innovate specially at your work.
+              </p>
+              <a href="" class="btn ezy__blog6-btn-read-more">Read More</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 h-100">
+          <article class="ezy__blog6-post">
+            <div class="position-relative">
+              <img
+                src="https://media.istockphoto.com/id/911814128/photo/3d-rendering-of-modern-cozy-house-in-chalet-style.jpg?s=612x612&w=0&k=20&c=10BfCKVH258lR0husYzmWz7lY8RViEUYxbfozLxgbyo="
+                alt=""
+                class="img-fluid w-100 ezy-blog6-banner"
+              />
+              <div class="px-4 py-3 ezy__blog6-calendar">29<br />Feb<br />2019</div>
+            </div>
+            <div class="p-3">
+              <p class="ezy__blog6-author">By <a href="" class="text-decoration-none">Shawn Paul</a></p>
+              <h4 class="mt-3 ezy__blog6-title fs-4" style="color:darkgreen;">My Adventure in Alps,The Heighest!</h4>
+              <p class="ezy__blog6-description mt-3 mb-4" style="color:darkgreen;">
+                Being creative within the constraints of client briefs, budgets and timelines.
+              </p>
+              <a href="" class="btn ezy__blog6-btn-read-more">Read More</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 h-100">
+          <article class="ezy__blog6-post">
+            <div class="position-relative">
+              <img
+                src="https://media.istockphoto.com/id/1006787900/photo/3d-rendering-of-modern-cozy-house-at-goldy-autumn.jpg?s=612x612&w=0&k=20&c=99cVqy-D8QByUTSMULI31_Q0vL_GRvwbRuGrUDHJZnM="
+                alt=""
+                class="img-fluid w-100 ezy-blog6-banner"
+              />
+              <div class="px-4 py-3 ezy__blog6-calendar">26<br />Oct<br />2016</div>
+            </div>
+            <div class="p-3">
+              <p class="ezy__blog6-author">By <a href="" class="text-decoration-none">Elleca Perry</a></p>
+              <h4 class="mt-3 ezy__blog6-title fs-4" style="color:darkgreen;">How I Escape My Mind By Listening To Music</h4>
+              <p class="ezy__blog6-description mt-3 mb-4" style="color:darkgreen;">
+                Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores.
+              </p>
+              <a href="" class="btn ezy__blog6-btn-read-more">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+  
+      <div class="text-center">
+        <a href="" class="btn ezy__blog6-btn mt-5">Load All Posts</a>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <style>
+  .ezy__blog6 {
+    /* Bootstrap variables */
+    --bs-body-color: #28303b;
+    --bs-body-bg: #fff;
+  
+    /* easy frontend variables */
+    --ezy-theme-color: #1F4529;
+    --ezy-theme-color-rgb: 13, 110, 253;
+    --ezy-card-bg: #fff;
+    --ezy-card-shadow: 0 25px 41px rgba(89, 88, 109, 0.15);
+  
+    background-color: var(--bs-body-bg);
+    padding: 60px 0;
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__blog6 {
+      padding: 100px 0;
+    }
+  }
+  
+  /* Gray Block Style */
+  .gray .ezy__blog6,
+  .ezy__blog6.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(246, 246, 246);
+  
+    /* easy frontend variables */
+    --ezy-card-bg: #fff;
+    --ezy-card-shadow: 0px 8px 44px rgba(182, 198, 222, 0.48);
+  }
+  
+  /* Dark Gray Block Style */
+  .dark-gray .ezy__blog6,
+  .ezy__blog6.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: rgb(241, 241, 241);
+    --bs-body-bg: rgb(30, 39, 53);
+  
+    /* easy frontend variables */
+    --ezy-card-bg: rgb(11, 23, 39);
+    --ezy-card-shadow: none;
+  }
+  
+  /* Dark Block Style */
+  .dark .ezy__blog6,
+  .ezy__blog6.dark {
+    /* Bootstrap variables */
+    --bs-body-color: rgb(255, 255, 255);
+    --bs-body-bg: rgb(11, 23, 39);
+  
+    /* easy frontend variables */
+    --ezy-card-bg: rgb(30, 39, 53);
+    --ezy-card-shadow: none;
+  }
+  
+  /* heading and sub-heading */
+  .ezy__blog6-heading {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__blog6-sub-heading {
+    color: var(--bs-body-color);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    opacity: 0.8;
+  }
+  
+  @media (min-width: 991px) {
+    .ezy__blog6-heading {
+      font-size: 45px;
+    }
+  }
+  
+  .ezy__blog6-post {
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  
+  .ezy-blog6-banner {
+    border-radius: 10px;
+    box-shadow: var(--ezy-card-shadow);
+  }
+  
+  .ezy__blog6-calendar {
+    background-color:  #47663B;
+    color:whitesmoke;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    opacity: 0.85;
+  }
+  
+  .ezy__blog6-author {
+    color: var(--bs-body-color) !important;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+  
+  .ezy__blog6-title {
+    font-weight: 500;
+    margin-top: 0 !important;
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__blog6-description {
+    color: var(--bs-body-color);
+    opacity: 0.6;
+  }
+  
+  .ezy__blog6-btn {
+    padding: 12px 30px;
+    font-weight: bold;
+    color:  #47663B;
+    background-color:  #e6e9e5;
+    border-color: #47663B;
+  }
+  
+  .ezy__blog6-btn:hover {
+    color: #ffffff;
+    background-color:  #47663B;
+  }
+  
+  .ezy__blog6-btn-read-more {
+    padding: 7px 20px;
+    color:  #47663B;
+    border-color:  #47663B;
+  }
+  
+  .ezy__blog6-btn-read-more:hover {
+    background-color:  #47663B;
+    color: #ffffff;
+  }
+  
+  .ezy__blog6-author a {
+    color: var(--ezy-theme-color);
+  }
+  </style>
+      
+  
+  
+  
+  
+  
+  <!-- and thg blog part  -->
+  
+  
+</div>
+
+
+<section class="ezy__footer2 ">
+  <div class="container">
+    <div class="row text-center text-sm-start">
+      <div class="col-lg-3">
+        <h2 class="fw-bold text-capitalize fs-1">dream-home.com</h2>
+      </div>
+      <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+        <h5>Quick Links</h5>
+        <ul class="nav flex-column ezy__footer2-quick-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+        <h5>Social Media</h5>
+        <ul class="nav flex-column ezy__footer2-quick-links">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-2 mt-4 mt-lg-0">
+        <h5> Info</h5>
+        <ul class="nav flex-column ezy__footer2-quick-links">
+          <li><a href="#">Select</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Payment</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-3 mt-4 mt-lg-0">
+        <h5>Contact Us</h5>
+        <ul class="nav flex-column ezy__footer2-quick-links">
+          <li><a href="#">Sylhet, india </a></li>
+          <li><a href="#">contact@dream-home.com</a></li>
+          <li><a href="#">99456 68458</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="row d-flex justify-content-between align-items-center text-center text-lg-start">
+      <div class="col-lg-4">
+        <p class="mb-0 mt-1">Copyright &copy; dream-home.com, All rights reserved</p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <ul class="ezy__footer2-nav nav justify-content-center mt-1">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end text-center text-lg-end mt-1">
+        <ul class="ezy__footer2-social nav">
+          <li>
+            <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
+                class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
+                class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
+                class="fab fa-pinterest-p"></i></a>
+          </li>
+          <li>
+            <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
+                class="fab fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.ezy__footer2 {
+  /* Bootstrap variables */
+  --bs-body-color: #E8ECD7;
+  --bs-body-bg:  #47663B;
+
+  /* Easy Frontend variables */
+  --ezy-theme-color:  #47663B;
+  --ezy-theme-color-rgb: 13, 110, 253;
+
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+  .ezy__footer2 {
+    padding: 80px 0;
+  }
+}
+
+/* Gray Block Style */
+.gray .ezy__footer2,
+.ezy__footer2.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__footer2,
+.ezy__footer2.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+}
+
+.dark .ezy__footer2,
+.ezy__footer2.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+}
+
+.ezy__footer2-nav .nav-link {
+  color: var(--bs-body-color);
+}
+
+.ezy__footer2-nav .nav-link:hover {
+  color: var(--bs-body-color);
+  opacity: 0.8;
+}
+
+.ezy__footer2-social li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 6px 8px;
+}
+
+.ezy__footer2-social li a {
+  color: var(--bs-body-color);
+  width: 35px;
+  height: 35px;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+.ezy__footer2-social li a:hover {
+  color: #47663B;
+  background: #d1dddd;
+  cursor: pointer;
+}
+
+.ezy__footer2-quick-links li {
+  margin-bottom: 8px;
+}
+
+.ezy__footer2-quick-links li a {
+  color: var(--bs-body-color);
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.ezy__footer2-quick-links li a:hover {
+  color: var(--bs-body-color);
+  opacity: 1;
+}
+</style>
+
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
