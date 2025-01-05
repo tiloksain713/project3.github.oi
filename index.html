@@ -15,323 +15,218 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
 
+<style>
+  body {
+      position: relative; 
+  }
 
-
-  </style> 
+  </style>
 </head>
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<body >
 
 
+<div class="ezy__nav7 light">
+	<nav class="navbar navbar-expand-lg flex-column navbar-light py-3">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				LOGO
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ezy_nav7-navbar-text"
+				aria-controls="ezy_nav7-navbar-text" aria-expanded="false" aria-label="Toggle navigation">
+				<span>
+					<span></span>
+				</span>
+			</button>
+			<div class="collapse navbar-collapse" id="ezy_nav7-navbar-text">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-4 mt-lg-0">
+					<li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Why us?</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">How It Works</a></li>
+					<li class="nav-item">
+						<a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#ezy_nav7-navbar-search"
+							aria-expanded="false" aria-controls="ezy_nav7-navbar-search">
+							<span class="fas fa-search"></span>
+						</a>
+					</li>
+				</ul>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="collapse w-100" id="ezy_nav7-navbar-search">
+				<form class="mt-4">
+					<div class="input-group">
+						<input class="form-control px-3" type="search" placeholder="City, Address, Zip" aria-label="Search" />
+						<button class="btn ezy__nav7-btn px-3" type="submit">Search</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</nav>
+</div>
 
-  <div class="ezy__nav1 light ">
-    <nav class="navbar navbar-expand-lg navbar-light py-3">
-      <div class="container">
-        <a class="navbar-brand text-capitalize fw-bolder" href="#">
-          dream-home.com
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span>
-            <span></span>
-          </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-4 mt-lg-0">
-            <li class="nav-item"><a class="nav-link active fw-bolder fs-4 text-capitalize" href="#home"> <b>Home </b></a></li>
-            <li class="nav-item"><a class="nav-link fw-bolder fs-4 text-capitalize" href="#porperties"><b> porperties </b></a></li>
-            <li class="nav-item"><a class="nav-link fw-bolder fs-4 text-capitalize" href="#city"> <b>city </b></a></li>
-            <li class="nav-item"><a class="nav-link fw-bolder fs-4 text-capitalize" href="#client"> <b>client </b></a></li>
-            <li class="nav-item"><a class="nav-link fw-bolder fs-4 text-capitalize" href="#content"><b> contact </b></a></li>
-            <li class="nav-item"><a class="nav-link fw-bolder fs-4 text-capitalize" href="#blog"> <b>  blog </b></a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-  
-  <style>
-  .ezy__nav1 {
-    /* Bootstrap variables */
-    --bs-body-color: #1F4529;
-    --bs-body-bg: rgb(13, 110, 253);;
-  
-    /* Easy Frontend variables */
-    --ezy-theme-color: rgb(13, 110, 253);
-    --ezy-theme-color-rgb: 13, 110, 253;
-  
-    background-color: var(--bs-body-bg);
-  }
-  
-  
-  /* Gray Block Style */
-  .gray .ezy__nav1,
-  .ezy__nav1.gray {
-    /* Bootstrap variables */
-    --bs-body-bg: #E8ECD7;
-  }
-  
-  /* Dark Gray Block Style */
-  .dark-gray .ezy__nav1,
-  .ezy__nav1.dark-gray {
-    /* Bootstrap variables */
-    --bs-body-color: #ffffff;
-    --bs-body-bg: rgb(30, 39, 53);
-  }
-  
-  /* Dark Block Style */
-  .dark .ezy__nav1,
-  .ezy__nav1.dark {
-    /* Bootstrap variables */
-    --bs-body-color: #ffffff;
-    --bs-body-bg: rgb(11, 23, 39);
-  
-  }
-  
-  .ezy__nav1 .navbar-brand {
-    font-weight: 800;
-    font-size: 30px;
-    color: var(--bs-body-color);
-  }
-  
-  .ezy__nav1 .navbar-toggler {
-    border: none;
-    box-shadow: none !important;
-  }
-  
-  .ezy__nav1 .navbar-toggler>span {
-    display: flex;
-    align-items: center;
-    height: 32px;
-  }
-  
-  .ezy__nav1 .navbar-toggler>span>span {
-    position: relative;
-  }
-  
-  .ezy__nav1 .navbar-toggler>span>span,
-  .ezy__nav1 .navbar-toggler>span>span::before,
-  .ezy__nav1 .navbar-toggler>span>span::after {
-    height: 2px;
-    background-color: var(--bs-body-color);
-    width: 25px;
-    display: inline-block;
-    border-radius: 5px;
-    transition: all .35s ease-in-out;
-  }
-  
-  .ezy__nav1 .navbar-toggler>span>span::before,
-  .ezy__nav1 .navbar-toggler>span>span::after {
-    content: '';
-    position: absolute;
-    left: 0;
-  }
-  
-  .ezy__nav1 .navbar-toggler[aria-expanded="false"]>span>span::before {
-    top: 7px;
-  }
-  
-  .ezy__nav1 .navbar-toggler[aria-expanded="false"]>span>span::after {
-    bottom: 7px;
-  }
-  
-  .ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span {
-    background-color: transparent;
-  }
-  
-  .ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span::before {
-    top: 0;
-    transform: rotate(-45deg);
-  }
-  
-  .ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span::after {
-    bottom: 0;
-    transform: rotate(45deg);
-  }
-  
-  .ezy__nav1 .navbar-nav .nav-link {
-    color: var(--bs-body-color);
-    opacity: .6;
-  }
-  
-  .ezy__nav1 .navbar-nav .nav-link:hover,
-  .ezy__nav1 .navbar-nav .nav-link:focus,
-  .ezy__nav1 .navbar-nav .nav-link.active {
-    color: var(--bs-body-color);
-    opacity: 1;
-  }
-  
-  @media (min-width: 992px) {
-    .ezy__nav1 .navbar-nav .nav-link {
-      padding-right: 16px;
-      padding-left: 16px;
-    }
-  }
+<style>
+.ezy__nav7 {
+	/* Bootstrap variables */
+	--bs-body-color:#47663B;
+	--bs-body-bg: rgb(255, 255, 255);
 
+	/* Easy Frontend variables */
+	--ezy-theme-color: rgb(13, 110, 253);
+	--ezy-theme-color-rgb: 13, 110, 253;
 
-  
-
-.navbar .navbar-nav .nav-item {
-  position: relative;
-  
+	background-color: var(--bs-body-bg);
 }
 
-.navbar .navbar-nav .nav-item{
-        color: #666;
-      
-        font-size: 16px;
-        font-weight: bold;
+/* Gray Block Style */
+.gray .ezy__nav7,
+.ezy__nav7.gray {
+	/* Bootstrap variables */
+	--bs-body-bg: rgb(246, 246, 246);
 }
 
-.navbar .navbar-nav .nav-item::after{
-        content: "";
-        display: block;
-        position: relative;
-        left: 50%;
-        width: 0px;
-        border-bottom: 5px solid  #1F4529; 
-        transition: all ease-in-out .2s; }
-
-        .navbar .navbar-nav .nav-item:hover::after {
-        width: 80%;
-        left: 15px;
-        margin-top: -5px;
+/* Dark Gray Block Style */
+.dark-gray .ezy__nav7,
+.ezy__nav7.dark-gray {
+	/* Bootstrap variables */
+	--bs-body-color: #ffffff;
+	--bs-body-bg: rgb(30, 39, 53);
 }
 
 
-  </style>
+/* Dark Block Style */
+.dark .ezy__nav7,
+.ezy__nav7.dark {
+	/* Bootstrap variables */
+	--bs-body-color: #ffffff;
+	--bs-body-bg: rgb(11, 23, 39);
+}
 
-  
+.ezy__nav7 .navbar-brand {
+	font-weight: 800;
+	font-size: 30px;
+	color: var(--bs-body-color);
+}
 
-  
-  <style>
-  .ezy__nav1 {
-    /* Bootstrap variables */
-    --bs-body-color: #1F4529;
-    --bs-body-bg: rgb(255, 255, 255);
-  
-    /* Easy Frontend variables */
-    --ezy-theme-color: rgb(13, 110, 253);
-    --ezy-theme-color-rgb: 13, 110, 253;
-  
-    background-color: var(--bs-body-bg);
-  }
-  
-  
-  /* Gray Block Style */
-  .gray .ezy__nav1,
-  .ezy__nav1.gray {
-    /* Bootstrap variables */
-    --bs-body-bg: rgb(246, 246, 246);
-  }
-  
-  /* Dark Gray Block Style */
-  .dark-gray .ezy__nav1,
-  .ezy__nav1.dark-gray {
-    /* Bootstrap variables */
-    --bs-body-color: #ffffff;
-    --bs-body-bg: rgb(30, 39, 53);
-  }
-  
-  /* Dark Block Style */
-  .dark .ezy__nav1,
-  .ezy__nav1.dark {
-    /* Bootstrap variables */
-    --bs-body-color: #ffffff;
-    --bs-body-bg: rgb(11, 23, 39);
-  
-  }
-  
-  .ezy__nav1 .navbar-brand {
-    font-weight: 800;
-    font-size: 30px;
-    color: var(--bs-body-color);
-  }
-  
-  .ezy__nav1 .navbar-toggler {
-    border: none;
-    box-shadow: none !important;
-  }
-  
-  .ezy__nav1 .navbar-toggler>span {
-    display: flex;
-    align-items: center;
-    height: 32px;
-  }
-  
-  .ezy__nav1 .navbar-toggler>span>span {
-    position: relative;
-  }
-  
-  .ezy__nav1 .navbar-toggler>span>span,
-  .ezy__nav1 .navbar-toggler>span>span::before,
-  .ezy__nav1 .navbar-toggler>span>span::after {
-    height: 2px;
-    background-color: var(--bs-body-color);
-    width: 25px;
-    display: inline-block;
-    border-radius: 5px;
-    transition: all .35s ease-in-out;
-  }
-  
-  .ezy__nav1 .navbar-toggler>span>span::before,
-  .ezy__nav1 .navbar-toggler>span>span::after {
-    content: '';
-    position: absolute;
-    left: 0;
-  }
-  
-  .ezy__nav1 .navbar-toggler[aria-expanded="false"]>span>span::before {
-    top: 7px;
-  }
-  
-  .ezy__nav1 .navbar-toggler[aria-expanded="false"]>span>span::after {
-    bottom: 7px;
-  }
-  
-  .ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span {
-    background-color: transparent;
-  }
-  
-  .ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span::before {
-    top: 0;
-    transform: rotate(-45deg);
-  }
-  
-  .ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span::after {
-    bottom: 0;
-    transform: rotate(45deg);
-  }
-  
-  .ezy__nav1 .navbar-nav .nav-link {
-    color: var(--bs-body-color);
-    opacity: .6;
-  }
-  
-  .ezy__nav1 .navbar-nav .nav-link:hover,
-  .ezy__nav1 .navbar-nav .nav-link:focus,
-  .ezy__nav1 .navbar-nav .nav-link.active {
-    color: var(--bs-body-color);
-    opacity: 1;
-  }
-  
-  @media (min-width: 992px) {
-    .ezy__nav1 .navbar-nav .nav-link {
-      padding-right: 16px;
-      padding-left: 16px;
-    }
-  }
-  </style>
+.ezy__nav7 .navbar-toggler {
+	border: none;
+	box-shadow: none !important;
+}
 
-  
-<style>.c-item{
-  height: 580px;
+.ezy__nav7 .navbar-toggler>span {
+	display: flex;
+	align-items: center;
+	height: 32px;
+}
+
+.ezy__nav7 .navbar-toggler>span>span {
+	position: relative;
+}
+
+.ezy__nav7 .navbar-toggler>span>span,
+.ezy__nav7 .navbar-toggler>span>span::before,
+.ezy__nav7 .navbar-toggler>span>span::after {
+	height: 2px;
+	background-color: var(--bs-body-color);
+	width: 25px;
+	display: inline-block;
+	border-radius: 5px;
+	transition: all .35s ease-in-out;
+}
+
+.ezy__nav7 .navbar-toggler>span>span::before,
+.ezy__nav7 .navbar-toggler>span>span::after {
+	content: '';
+	position: absolute;
+	left: 0;
+}
+
+.ezy__nav7 .navbar-toggler[aria-expanded="false"]>span>span::before {
+	top: 7px;
+}
+
+.ezy__nav7 .navbar-toggler[aria-expanded="false"]>span>span::after {
+	bottom: 7px;
+}
+
+.ezy__nav7 .navbar-toggler[aria-expanded="true"]>span>span {
+	background-color: transparent;
+}
+
+.ezy__nav7 .navbar-toggler[aria-expanded="true"]>span>span::before {
+	top: 0;
+	transform: rotate(-45deg);
+}
+
+.ezy__nav7 .navbar-toggler[aria-expanded="true"]>span>span::after {
+	bottom: 0;
+	transform: rotate(45deg);
+}
+
+.ezy__nav7 .navbar-nav .nav-link {
+	color: var(--bs-body-color);
+	opacity: .6;
+}
+
+.ezy__nav7 .navbar-nav .nav-link:hover,
+.ezy__nav7 .navbar-nav .nav-link:focus,
+.ezy__nav7 .navbar-nav .nav-link.active {
+	color: var(--bs-body-color);
+	opacity: 1;
+}
+
+@media (min-width: 992px) {
+	.ezy__nav7 .navbar-nav .nav-link {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+}
+
+.ezy__nav7 .btn {
+	border-radius: 10px;
+}
+
+.ezy__nav7-btn {
+	background-color: var(--ezy-theme-color);
+	color: #fff;
+}
+.ezy__nav7-btn:hover {
+	background-color: rgba(var(--ezy-theme-color-rgb), .9);
+	color: #fff;
+}
+
+.ezy__nav7 .btn-light {
+	background-color: rgba(var(--ezy-btn-color-rgb), .1);
+	border-color: rgba(var(--ezy-btn-color-rgb), .1);
+	color: var(--bs-body-color);
+}
+
+.ezy__nav7 .form-control {
+	min-height: 48px;
+	line-height: 40px;
+	border-color: transparent;
+	background: rgba(163, 190, 241, .14);
+	border-radius: 10px;
+	color: var(--bs-body-color);
+}
+
+.ezy__nav7 .form-control:focus {
+	border-color: #86b7fe;
+	box-shadow: none;
+}
+
+
+
+
+.c-item{
+  height: auto;
 
 }
 
 .c-img{
-  height: 100%;
+  
   object-fit: cover;
   filter: brightness(0.6);
 }
@@ -350,111 +245,126 @@
         background-color: #47663B;
         border: whitesmoke;
       }
-
-      
   
-</style>
 
-<div id="home"  data-aos="fade-up"   data-aos-anchor-placement="top-bottom">
-    <header ><!-- Carousel -->
-        <div id="demo" class="carousel slide">
-        
-          <!-- Indicators/dots -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-          </div>
-          
-          <!-- The slideshow/carousel -->
-        <!-- The slideshow/carousel -->
-  <div class="carousel-inner ">
-    <div class="carousel-item active c-item">
-      <img class="img-fluid" src="https://media.istockphoto.com/id/1720606866/photo/modern-white-bungalow-in-autumn.jpg?s=612x612&w=0&k=20&c=EHbA3fCtAM5zPVF4dctMQRpNg-OBdssmBmRFeKjutys=" alt="img" height="580px" width="100%">
-      <div class="carousel-caption   top-0 mt-4">
-        <p class="mt-5 fs-3 text-uppercase  animate__animated animate__backInDown  ">Los Angeles</p>
-        <h1 class="display-1 fw-bolder text-capitalize  animate__animated animate__backInLeft  ">We had such a great time in LA!</h1>
-        <button  type="button" class="btn header__blog4-btn  w-25 text-capitalize fs-3 fw-bolder   animate__animated animate__backInUp ">book now</button>
-      </div>
-    </div>
-    <div class="carousel-item c-item">
-      <img class="img-fluid" src="https://media.istockphoto.com/id/1539960868/photo/modern-cubic-villa-during-the-day.jpg?s=612x612&w=0&k=20&c=hJCa35j2i8UuDt1sJTV72nvabT7gcGgTJA6IU-lUueo=" alt="img"  height="580px" width="100%">
-      <div class="carousel-caption top-0 mt-4">
-        <p class="mt-5 fs-3 text-uppercase animate__animated animate__backInDown ">Los Angeles</p>
-        <h1 class="display-1 fw-bolder text-capitalize  animate__animated animate__backInLeft">We had such a great time in LA!</h1>
-        <button  type="button" class="btn btn header__blog4-btn  w-25 text-capitalize fs-3 fw-bolder    animate__animated animate__backInUp ">book now</button>
-        
-      </div> 
-    </div>
-    <div class="carousel-item c-item">
-      <img class="img-fluid" src="https://media.istockphoto.com/id/1560744952/photo/modern-house-in-a-classic-style.jpg?s=612x612&w=0&k=20&c=Oiz8_t-MPqIbU_dNBBckMvSKYWd_0DvabudIQ3cjm_4=" alt="img"  height="580px" width="100%">
-      <div class="carousel-caption top-0 mt-4">
-        <p class="mt-5 fs-3 text-uppercase animate__animated animate__backInDown ">Los Angeles</p>
-        <h1 class="display-1 fw-bolder text-capitalize  animate__animated animate__backInLeft">We had such a great time in LA!</h1>
-        <button  type="button" class="btn btn header__blog4-btn  w-25 text-capitalize fs-3 fw-bolder    animate__animated animate__backInUp ">book now</button>
-      </div>  
-    </div>
+
+  </style>
+
+<div id="Home" class="container-fluid">
+
+  
+<header>
+
+   <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
   </div>
   
-          <!-- Left and right controls/icons -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
+  <!-- The slideshow/carousel -->
+  
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner ">
+        <div class="carousel-item active c-item">
+          <img class="c-img" src=" https://media.istockphoto.com/id/1720606866/photo/modern-white-bungalow-in-autumn.jpg?s=612x612&w=0&k=20&c=EHbA3fCtAM5zPVF4dctMQRpNg-OBdssmBmRFeKjutys= " alt="img" height="580px" width="100%">
+          <div class="carousel-caption   top-0 mt-4">
+            <p class="mt-5 fs-3 text-uppercase  animate__animated animate__backInDown ">booking</p>
+            <h1 class="display-1 fw-bolder text-capitalize  animate__animated animate__backInLeft ">We had such a great time in LA!</h1>
+            <button  type="button" class="btn header__blog4-btn px-5 fs-3    animate__animated animate__backInUp ">book now</button>
+          </div>
         </div>
-        
+        <div class="carousel-item c-item">
+          <img class="c-img" src="https://media.istockphoto.com/id/1539960868/photo/modern-cubic-villa-during-the-day.jpg?s=612x612&w=0&k=20&c=hJCa35j2i8UuDt1sJTV72nvabT7gcGgTJA6IU-lUueo=" alt="img"  height="580px" width="100%">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="mt-5 fs-3 text-uppercase  animate__animated animate__backInDown">booking</p>
+            <h1 class="display-1 fw-bolder text-capitalize   animate__animated animate__backInLeft">We had such a great time in LA!</h1>
+            <button  type="button" class="btn header__blog4-btn px-5  fs-3   animate__animated animate__backInUp ">book now</button>
+            
+          </div> 
+        </div>
+        <div class="carousel-item c-item">
+          <img class="c-img" src="https://media.istockphoto.com/id/1560744952/photo/modern-house-in-a-classic-style.jpg?s=612x612&w=0&k=20&c=Oiz8_t-MPqIbU_dNBBckMvSKYWd_0DvabudIQ3cjm_4=" alt="img"  height="580px" width="100%">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="mt-5 fs-3 text-uppercase  animate__animated animate__backInDown">booking</p>
+            <h1 class="display-1 fw-bolder text-capitalize   animate__animated animate__backInLeft">We had such a great time in LA!</h1>
+            <button  type="button" class="btn header__blog4-btn px-5  fs-3   animate__animated animate__backInUp ">book now</button>
+          </div>  
+        </div>
+      </div>
       
         
-        
-        
-          <div class="container-fluid    booking pb-5 wow fadeIn" data-wow-delay="0.1s" style="background-color: #47663B;">
-              <div class="container  mt-0 ">
-                  <div class=" mt  ">
-                      <div class="row g-2 ">
-                          <div class="col-md-10">
-                              <div class="row g-2">
-                                  <div class="col-md-3 mt-5">
-                                      <div class="date" id="date1" data-target-input="nearest">
-                                          <input type="text" class="form-control datetimepicker-input"
-                                              placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
-                                      </div>
-                                  </div>
-                                  <div class="col-md-3 mt-5">
-                                      <div class="date" id="date2" data-target-input="nearest">
-                                          <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-3 mt-5">
-                                      <select class="form-select">
-                                          <option selected>  flat</option>
-                                          <option value="1">Adult 1</option>
-                                          <option value="2">Adult 2</option>
-                                          <option value="3">Adult 3</option>
-                                      </select>
-                                  </div>
-                                  <div class="col-md-3 mt-5">
-                                      <select class="form-select">
-                                          <option selected>Budget</option>
-                                          <option value="1">Child 1</option>
-                                          <option value="2">Child 2</option>
-                                          <option value="3">Child 3</option>
-                                      </select>
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</div>
+</div>
+
+
+
+    
+    
+    <section >
+      <div class="container-fluid   booking pb-5 wow fadeIn" data-wow-delay="0.1s"  style="background-color: #47663B;">
+          <div class="container ">
+              <div class="  shadow" style="padding: 35px;" ">
+                  <div class="row g-2 ">
+                      <div class="col-md-10  mt-5">
+                          <div class="row g-2">
+                              <div class="col-md-3">
+                                  <div class="date" id="date1" data-target-input="nearest">
+                                      <input type="text" class="form-control datetimepicker-input"
+                                          placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
                                   </div>
                               </div>
+                              <div class="col-md-3">
+                                  <div class="date" id="date2" data-target-input="nearest">
+                                      <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <select class="form-select">
+                                      <option selected>Adult</option>
+                                      <option value="1">Adult 1</option>
+                                      <option value="2">Adult 2</option>
+                                      <option value="3">Adult 3</option>
+                                  </select>
+                              </div>
+                              <div class="col-md-3">
+                                  <select class="form-select">
+                                      <option selected>Child</option>
+                                      <option value="1">Child 1</option>
+                                      <option value="2">Child 2</option>
+                                      <option value="3">Child 3</option>
+                                  </select>
+                              </div>
                           </div>
-                          <div class="col-md-2  mt-5">
-                              <button class="btn btn-primary w-100 bg-light text-dark">Submit</button>
-                          </div>
+                      </div>
+                      <div class="col-md-2  mt-5">
+                          <button class="btn  bg-white btn-white w-100">Submit</button>
                       </div>
                   </div>
               </div>
           </div>
-          
-          <!-- Booking End -->
-           </header>
+      </div>
+      </section>
+      </header>
+
+      </div>
       
+      <!-- Booking End -->
+
+
+
+
         
         
 
